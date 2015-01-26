@@ -1,0 +1,1 @@
+Tots els continguts d'aquest repositori es distribueixen sota la llicència [Creative Commons Reconeixement 4.0](http://creativecommons.org/licenses/by/4.0/deed.ca), excepte que s'hi indiqui el contrari.
