@@ -6,4 +6,4 @@ La idea és fer entrevistes a diversos alumnes de diferents nivells per a copsar
 
 En aquest repositori hi haurà tots els materials i codi font associat a aquest projecte (vídeos, transcripcions de l'audio, crèdits, etc.)
 
-Els continguts estan distribuïts per carpetes corresponents a les edicions: JTECS-1, JTECS-2, etc. (cursos 2014-2015, 2015-2016, etc.)
+Els continguts estan distribuïts per carpetes corresponents a les edicions: JTECS-1 (curs 2014-2015), JTECS-2 (curs 2015-2016), etc.
