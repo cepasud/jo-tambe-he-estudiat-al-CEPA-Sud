@@ -5,4 +5,8 @@
 
 # Biblioteques de sons #
 
-  * Existeixen diverses biblioteques de sons lliures: [freesound](http://www.freesound.org/browse/) (sons d'introducció del vídeo), [MusOpen](https://musopen.org/music/) (música clàssica). La darrera potser es podria fer servir pels crèdits.
+  * Existeixen diverses biblioteques de sons lliures:
+    * [freesound](http://www.freesound.org/browse/) (sons d'introducció del vídeo)
+    * [MusOpen](https://musopen.org/music/) (música clàssica)
+    * [jamendo](https://www.jamendo.com/en/search) (música pop, rock, etc.)
+    Les dues darreres potser es podrien fer servir pels crèdits.
