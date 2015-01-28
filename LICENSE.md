@@ -1,1 +1,1 @@
-Tots els continguts d'aquest repositori es distribueixen sota la llicència [Creative Commons Reconeixement 4.0](http://creativecommons.org/licenses/by/4.0/deed.ca), excepte que s'hi indiqui el contrari.
+Aquesta obra està subjecte a la llicència de Reconeixement 4.0 Internacional de Creative Commons. Si voleu veure una còpia d'aquesta llicència accediu a http://creativecommons.org/licenses/by/4.0/ o envieu una carta sol·licitant-la a Creative Commons,  PO Box 1866, Mountain View, CA 94042, USA.
