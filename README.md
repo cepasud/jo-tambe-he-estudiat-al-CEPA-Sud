@@ -8,4 +8,6 @@ En aquest repositori hi haurà tots els materials i codi font associat a aquest 
 
 Els continguts estan distribuïts per carpetes corresponents a les edicions: JTECS-1 (curs 2014-2015), JTECS-2 (curs 2015-2016), etc. També podeu trobar informació al [wiki](https://github.com/cepasud/jo-tambe-he-estudiat-al-CEPA-Sud/wiki).
 
+Podeu veure els vídeos en línia a través de la plataforma [vimeo](http://vimeo.com/cepasud)
+
 Excepte que s'hi indiqui el contrari, tots els continguts d'aquest repositori es distribueixen sota llicència [Creative Commons Reconeixement 4.0](https://creativecommons.org/licenses/by/4.0/deed.ca) (CC-BY 4.0). Llegiu el fitxer `LICENSE.md` per a més informació.
