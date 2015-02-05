@@ -19,7 +19,6 @@ Les eines d'edició de vídeo lliures existents són:
   * [LiVES](http://lives.sourceforge.net/)
   * [OpenShot](http://www.openshot.org/)
   * [Pitivi](http://www.pitivi.org)
-  * 
   
 # Eines d'animació del principi #
 
