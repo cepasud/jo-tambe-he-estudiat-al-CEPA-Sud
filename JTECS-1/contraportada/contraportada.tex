@@ -1,0 +1,172 @@
+\documentclass[a4paper,11pt]{book}
+% Language
+\usepackage{polyglossia}
+\setdefaultlanguage{catalan}
+% Links
+\usepackage{nameref}
+\usepackage[unicode=true]{hyperref}
+
+% Colour
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+% Headers
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+% Time
+\usepackage{datetime}
+% Graphics
+\usepackage{graphicx}
+% AMS packages
+\usepackage[reqno]{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+% Theorems packages
+\usepackage{amsthm}
+\usepackage{thmtools}
+% Units
+\usepackage{units}
+% Tables
+\usepackage{array}
+% QR code
+\usepackage{qrcode}
+% Glossari
+\usepackage{makeidx}
+% Enumerations easyly
+\usepackage[inline]{enumitem}
+% Multicols
+\usepackage{multicol}
+% TiKZ
+\usepackage{tikz}
+\usepackage{pgfmath}
+\usetikzlibrary{decorations.markings, mindmap,calc,intersections,through,backgrounds,arrows,shapes,positioning}
+% Break URL
+\usepackage{breakurl}
+
+
+
+% Theorems (thmtools options)
+% Porting amsthm definitions https://github.com/somenxavier/apunts-acces-uib-per-a-majors-de-25-anys/commit/24cc42cf1ed88a1596434012ac943d0995cec56f
+% refname i Refname for using \autoref, \nameref, \cref i \Cref (see thmtools documentation)
+
+%% Theorems' styles
+\declaretheoremstyle[
+headfont=\normalfont\itshape,
+bodyfont=\normalfont,
+qed=\blacksquare
+]{tipusdemo}
+
+\declaretheoremstyle[
+headfont=\color{NavyBlue}\normalfont\sffamily\bfseries,
+bodyfont=\normalfont\itshape
+]{tipusthm}
+
+\declaretheoremstyle[
+headfont=\color{NavyBlue}\normalfont\sffamily,
+bodyfont=\normalfont
+]{tipusdef}
+
+\declaretheoremstyle[
+headfont=\normalfont\sffamily,
+bodyfont=\normalfont
+]{tipusexemple}
+
+
+%% Results, algorithm, and so
+\declaretheorem[name=Teorema, refname={teorema,teoremes}, Refname={Teorema, Teoremes},style=tipusthm]{theorem}
+\declaretheorem[name=Corol·lari, sibling=theorem, refname={corol·lari,corol·laris}, Refname={Corol·lari, Corol·laris},style=tipusthm]{corollary}
+\declaretheorem[name=Lema, sibling=theorem, refname={lema, lemes}, Refname={Lema, Lemes},style=tipusthm]{lemma}
+\declaretheorem[name=Proposició,sibling=theorem, refname={proposició,proposicions}, Refname={Proposició, Proposicions},style=tipusthm]{proposition}
+\declaretheorem[name=Algorisme, refname={algorisme,algorismes}, Refname={Algorisme, Algorismes},style=tipusthm]{algorithm}
+\declaretheorem[name=Condició, refname={condició,condicions}, Refname={Condició, Condicions},style=tipusthm]{condition}
+
+%% Definitions, etc.
+\declaretheorem[style=tipusdef, name=Definició, refname={definició,definicions}, Refname={Definició, Definicions}]{definition}
+\declaretheorem[style=tipusdef, name=Notació, refname={notació,notacions}, Refname={Notació,Notacions}]{notation}
+
+%% Examples and claims
+\declaretheorem[style=tipusexemple, name=Exemple, refname={exemple, exemples}, Refname={Exemple, Exemples}]{example}
+\declaretheorem[style=tipusexemple, name=Observació, refname={observació,observacions}, Refname={Observació, Observacions},style=tipusdef]{claim}
+
+%% Notes, exercises, etc.
+%%% era style=remark
+\declaretheorem[style=tipusexemple,name=Nota, refname={nota,notes}, Refname={Nota, Notes}]{remark}
+\declaretheorem[style=tipusexemple,name=Exercici, refname={exercici, exercicis}, Refname={Exercici, Exercicis}]{exercise}
+
+%% Solutions and resolutions
+\declaretheorem[style=tipusdemo,name=Solució, refname={solució,solucions}, Refname={Solució, Solucions}]{solution}
+%%% For solution without enumeration
+\declaretheorem[style=tipusdemo,name=Solució, refname={solució,solucions}, Refname={Solució, Solucions},numbered=no]{solution*}
+\declaretheorem[style=tipusexemple,name=Solució, refname={solució,solucions}, Refname={Solució, Solucions},numbered=no]{solutions-final}
+\declaretheorem[style=tipusdemo,name=Resolució, refname={resolució,resolucions}, Refname={Resolució, Resolucions},numbered=no]{resolution}
+
+
+%% macros
+
+\newcommand{\term}[1]{{\color{blue}\em #1}}
+
+% URL settings (hyperref options)
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=blue,      
+    urlcolor=blue,
+    pdftitle={Apunts per a l'accés a la UIB per a majors de 25 anys},
+    pdfauthor = {Xavier Bordoy},
+}
+ 
+\urlstyle{same}
+
+
+% Page headings styles (fancyhdr options)
+\pagestyle{fancy}
+
+\fancyhf{}
+
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[LO]{\textit{\nouppercase{\leftmark}}}
+\fancyhead[RE]{\textit{\nouppercase{\rightmark}}}
+\fancyhead[RO,LE]{\thepage}
+
+%os.resultof("sha256sum \jobname.tex | cut -c  -5"))})}, \today)}
+
+% Headers options (titlesec)
+\definecolor{headingcolor}{cmyk}{1,0.5431,0,0.5451}
+
+\titleformat
+{\chapter} % command
+[hang] % shape
+{\huge} % format
+{\color{headingcolor}\it\bfseries\LARGE\thechapter} % label
+{1ex} % sep
+{
+    \centering
+    \\
+    \color{headingcolor}
+} % before-code
+[
+\vspace{5cm}
+] % after-code
+
+\titleformat{\section}
+  {\color{headingcolor}\normalfont\Large\selectfont}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\color{headingcolor}\normalfont\large\selectfont}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\color{headingcolor}\bfseries\selectfont}{\thesubsubsection}{1em}{}
+
+%Why?
+\setcounter{MaxMatrixCols}{10}
+
+
+% Start the document
+\begin{document}
+
+% Cover
+\include{bidi}
+
+
+
+\end{document}
